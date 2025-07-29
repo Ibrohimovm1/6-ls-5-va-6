@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <script defer src="script.js"></script>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 20px;">
+    <div id="container" style="max-width: 600px; margin: 0 auto; background-color: white; border-radius: 10px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        
+        <h1 style="text-align: center; color: #333; margin-bottom: 30px; font-size: 28px; font-weight: bold;">TODO LIST</h1>
+        
+        <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+            <input 
+                type="text" 
+                id="noteInput" 
+                placeholder="Search note..." 
+                style="flex: 1; padding: 12px; border: 2px solid #e0e0e0; border-radius: 25px; font-size: 16px; outline: none;"
+            >
+            <button 
+                id="sendBtn" 
+                style="background: linear-gradient(45deg, #667eea, #764ba2); color: white; border: none; padding: 12px 20px; border-radius: 25px; cursor: pointer; font-size: 16px; font-weight: bold;"
+            >
+                SEND
+            </button>
+            <button 
+                id="themeBtn" 
+                style="background-color: #667eea; color: white; border: none; padding: 12px; border-radius: 50%; cursor: pointer; font-size: 16px; width: 45px; height: 45px;">
+                🌤️
+            </button>
+        </div>
+        
+        <div id="todoList"></div>
+    </div>
+</body>
+</html>
